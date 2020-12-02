@@ -40,3 +40,18 @@ TEST_CASE("Count Char") {
     int actual = countChar('a', input);
     REQUIRE(expected == actual);
 }
+
+TEST_CASE("Good Pass Part 2") {
+    string input1 = "abcde";
+    string input2 = "cdefg";
+    string input3 = "ccccccccc";
+    bool exp1 = true;
+    bool exp2 = false;
+    bool exp3 = false;
+    bool actual1 = isGoodPart2(1, 3, 'a', input1);
+    bool actual2 = isGoodPart2(1, 3, 'b', input2);
+    bool actual3 = isGoodPart2(2, 9, 'c', input3);
+    REQUIRE(exp1 == actual1);
+    REQUIRE(exp2 == actual2);
+    REQUIRE(exp3 == actual3);
+}
