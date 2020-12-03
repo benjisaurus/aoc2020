@@ -65,10 +65,65 @@ TEST_CASE("Tree count is 7") {
     vector<string> grid = readInput("test_input2.txt");
     Hill hill = Hill(grid);
     int count = 0;
-    for(auto i = 0; i < 10; i++){
+    while(!hill.atBottom()){
         hill.move(3,1);
         if(hill.hasTree()) { count++; }
     }
     REQUIRE(count == 7);
     REQUIRE(hill.atBottom());
+}
+
+TEST_CASE("Part 2 - 1") {
+    vector<string> grid = readInput("test_input2.txt");
+    Hill hill = Hill(grid);
+    int count = 0;
+    while(!hill.atBottom()){
+        hill.move(1,1);
+        if(hill.hasTree()) { count++; }
+    }
+    REQUIRE(count == 2);
+}
+
+TEST_CASE("Part 2 - 2") {
+    vector<string> grid = readInput("test_input2.txt");
+    Hill hill = Hill(grid);
+    int count = 0;
+    while(!hill.atBottom()){
+        hill.move(3,1);
+        if(hill.hasTree()) { count++; }
+    }
+    REQUIRE(count == 7);
+}
+
+TEST_CASE("Part 2 - 3") {
+    vector<string> grid = readInput("test_input2.txt");
+    Hill hill = Hill(grid);
+    int count = 0;
+    while(!hill.atBottom()){
+        hill.move(5,1);
+        if(hill.hasTree()) { count++; }
+    }
+    REQUIRE(count == 3);
+}
+
+TEST_CASE("Part 2 - 4") {
+    vector<string> grid = readInput("test_input2.txt");
+    Hill hill = Hill(grid);
+    int count = 0;
+    while(!hill.atBottom()){
+        hill.move(7,1);
+        if(hill.hasTree()) { count++; }
+    }
+    REQUIRE(count == 4);
+}
+
+TEST_CASE("Part 2 - 5") {
+    vector<string> grid = readInput("test_input2.txt");
+    Hill hill = Hill(grid);
+    int count = 0;
+    while(!hill.atBottom()){
+        hill.move(1,2);
+        if(hill.hasTree()) { count++; }
+    }
+    REQUIRE(count == 2);
 }

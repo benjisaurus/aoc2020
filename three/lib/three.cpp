@@ -42,7 +42,7 @@ Hill::Hill(vector<string> input) {
 }
 
 bool Hill::atBottom() {
-    return posy == length - 1;
+    return posy == (length - 1);
 }
 
 int Hill::getX() { return posx; }
