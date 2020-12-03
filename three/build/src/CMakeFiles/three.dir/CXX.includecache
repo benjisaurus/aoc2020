@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/benjisaurus/work/cpp/aoc2020/three/lib/three.cpp
+vector
+-
+fstream
+-
+string
+-
+iostream
+-
+

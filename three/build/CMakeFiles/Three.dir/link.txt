@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Three.dir/src/main.cpp.o  -o Three  src/libthree.a 
