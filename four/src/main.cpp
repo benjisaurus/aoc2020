@@ -15,4 +15,13 @@ int main() {
         if(isPassportValid(p)) { count++; }
     }
     cout << count << "\n";
+
+    int count2 = 0;
+    int total = 0;
+    for(auto p : passports) {
+        total++;
+        if((isPassportValid(p)) && (areFieldsValid(p))) { count2++; }
+    }
+    cout << count2 << "\n";
+    cout << total << "\n";
 }
