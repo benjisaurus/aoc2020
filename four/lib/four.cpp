@@ -1,0 +1,1 @@
+int getFour() { return 4; }
