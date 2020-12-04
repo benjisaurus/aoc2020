@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/Four.dir/src/main.cpp.o  -o Four  src/libfour.a 

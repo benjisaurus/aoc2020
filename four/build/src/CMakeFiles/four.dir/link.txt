@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfour.a  CMakeFiles/four.dir/__/lib/four.cpp.o
-/usr/bin/ranlib libfour.a
