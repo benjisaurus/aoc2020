@@ -1,0 +1,1 @@
+add_library (five ../lib/five.cpp)
