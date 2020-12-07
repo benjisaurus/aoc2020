@@ -1,0 +1,1 @@
+add_library (six ../lib/six.cpp)
